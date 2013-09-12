@@ -1,0 +1,14 @@
+Startup scripts are launched from /etc/rc.local
+
+omxplayer is a modified version that allows looping.
+
+Network interfaces are setup in /etc/network/interfaces
+
+Screen blanking time is set in /etc/kbd/config (BLANK_TIME).
+Screen blanking is used to hide the console on the main terminal when videos are playing.
+
+To power off the screen:
+$ tvservice -o
+
+To power on the screen:
+$ tvservice -p && fbset -xres 1872 -yres 1031 && fbset -xres 1872 -yres 1032 
