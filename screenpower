@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$1" != off ]
+  then
+    tvservice -p
+    fbset -xres 1872 -yres 1031
+    fbset -xres 1872 -yres 1032
+  else
+  # Turn on
+    tvservice -o
+fi
